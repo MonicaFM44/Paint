@@ -1,0 +1,19 @@
+.app-container {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+
+  .drawing-canvas {
+    height: 50em;
+    width: 80%;
+    background-color: white;
+  }
+
+  .canvas-menu {
+    height: 50em;
+    width: 20%;
+    background-color: white;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}

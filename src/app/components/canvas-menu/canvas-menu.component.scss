@@ -1,0 +1,37 @@
+.undo-redo-buttons {
+  display: flex;
+
+  .undo, .redo {
+    height: 100%;
+    width: 100%;
+
+    i {
+      font-size: 2rem;
+      color: black;
+    }
+  }
+}
+
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.black {
+  background-color: black;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+hr {
+  color: black;
+}

@@ -1,0 +1,37 @@
+<div>
+
+  <div class="undo-redo-buttons">
+    <button (click)="onClickUndo()"
+            class="undo">
+      <i class="fa fa-arrow-left"></i>
+    </button>
+    <button (click)="onClickRedo()"
+            class="redo">
+      <i class="fa fa-arrow-right"></i>
+    </button>
+  </div>
+
+  <div class="color-palette">
+    <div *ngFor="let color of colors">
+      <input [(ngModel)]="colorSelected"
+             (change)="onChangeColor(color)"
+             class="radio-button"
+             type="radio"
+             value="{{ color }}">
+      <span [ngClass]="color"
+            class="dot"></span>
+    </div>
+  </div>
+
+  <div class="line-widths">
+    <div *ngFor="let width of widths">
+      <input [(ngModel)]="widthSelected"
+             (change)="onChangeLineWidth(width)"
+             class="radio-button"
+             type="radio"
+             value="{{ width }}">
+      <span>{{ width }}</span>
+    </div>
+  </div>
+
+</div>
