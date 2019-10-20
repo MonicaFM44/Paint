@@ -13,12 +13,6 @@ export class CanvasMenuComponent {
   @Output() changeColor: EventEmitter<string> = new EventEmitter<string>();
   @Output() changeLineWidth: EventEmitter<number> = new EventEmitter<number>();
 
-  colors = ['red', 'blue', 'black'];
-  colorSelected = 'black';
-
-  widths = ['2', '5', '10'];
-  widthSelected = '5';
-
   constructor() { }
 
   onClickUndo() {

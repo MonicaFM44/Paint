@@ -1,0 +1,17 @@
+<div class="line-widths">
+  <div *ngFor="let width of widths">
+    <label class="selected-line">
+      <input [(ngModel)]="widthSelected"
+             (change)="onChangeLineWidth(width)"
+             class="radio-button"
+             type="radio"
+             value="{{ width }}"
+             name="widths">
+
+      <div class="line-wrapper">
+        <div [ngClass]="CLASS_WIDTH[width]"
+             class="line"></div>
+      </div>
+    </label>
+  </div>
+</div>

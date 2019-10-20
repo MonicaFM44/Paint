@@ -1,0 +1,65 @@
+.color-palette {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 0.5vh;
+  grid-row-gap: 2vh;
+  justify-items: center;
+  align-items: center;
+
+  .selected-color {
+    display: flex;
+    justify-content: center;
+
+    span {
+      cursor: pointer;
+    }
+  }
+
+  .radio-button {
+    opacity: 0;
+  }
+
+  [type='radio']:checked + span {
+    border: 3px solid white;
+    outline: 3px solid black;
+  }
+
+  .square-color {
+    height: 5.5vh;
+    width: 5.5vh;
+    display: inline-block;
+  }
+
+  .black {
+    background-color: black;
+  }
+
+  .red {
+    background-color: red;
+  }
+
+  .blue {
+    background-color: blue;
+  }
+
+  .aqua {
+    background-color: aqua;
+  }
+
+  .yellow {
+    background-color: yellow;
+  }
+
+  .purple {
+    background-color: purple;
+  }
+
+  .orange {
+    background-color: orange;
+  }
+
+  .green {
+    background-color: green;
+  }
+}

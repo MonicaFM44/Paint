@@ -3,13 +3,15 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { CanvasComponent, CanvasMenuComponent } from './components';
+import { CanvasComponent, CanvasMenuComponent, ColorsSelectorComponent, WidthSelectorComponent } from './components';
 
 @NgModule({
   declarations: [
     AppComponent,
     CanvasComponent,
-    CanvasMenuComponent
+    CanvasMenuComponent,
+    ColorsSelectorComponent,
+    WidthSelectorComponent
   ],
   imports: [
     BrowserModule,

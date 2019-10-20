@@ -2,18 +2,23 @@
   height: 100%;
   display: flex;
   justify-content: space-around;
+  align-content: center;
+  text-align: center;
+  margin: 5%;
 
   .drawing-canvas {
     height: 50em;
     width: 80%;
     background-color: white;
+    cursor: crosshair;
+    border: 3px solid black;
   }
 
   .canvas-menu {
     height: 50em;
     width: 20%;
     background-color: white;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 1%;
+    border: 3px solid black;
   }
 }

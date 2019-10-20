@@ -1,0 +1,48 @@
+.line-widths {
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
+
+  .selected-line {
+    cursor: pointer;
+
+    span {
+      cursor: pointer;
+    }
+
+    .line-wrapper {
+      height: 5vh;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+
+      .line {
+        margin: 10%;
+        width: 20vh;
+        border-bottom: 2px solid black;
+      }
+
+      .slim {
+        border-width: 2px;
+      }
+
+      .thick {
+        border-width: 8px;
+      }
+
+      .extra-thick {
+        border-width: 14px;
+      }
+    }
+
+    .radio-button {
+      opacity: 0;
+    }
+
+    [type='radio']:checked + .line-wrapper{
+      outline: 3px solid black;
+    }
+
+  }
+
+}

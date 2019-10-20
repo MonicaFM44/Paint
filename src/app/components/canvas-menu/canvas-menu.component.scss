@@ -1,37 +1,26 @@
-.undo-redo-buttons {
-  display: flex;
+.canvas-menu-container {
+  margin-right: 4%;
 
-  .undo, .redo {
-    height: 100%;
-    width: 100%;
+  .undo-redo-buttons {
+    display: flex;
+    height: 10vh;
+    margin-bottom: 11%;
 
-    i {
-      font-size: 2rem;
-      color: black;
+    .undo, .redo {
+      height: 100%;
+      width: 100%;
+      border: none;
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+      }
+
+      i {
+        font-size: 2rem;
+        color: black;
+      }
     }
   }
-}
 
-.dot {
-  height: 25px;
-  width: 25px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-}
-
-.black {
-  background-color: black;
-}
-
-.red {
-  background-color: red;
-}
-
-.blue {
-  background-color: blue;
-}
-
-hr {
-  color: black;
 }

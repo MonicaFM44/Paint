@@ -1,0 +1,14 @@
+<div class="color-palette">
+  <div *ngFor="let color of colors">
+    <label class="selected-color">
+      <input [(ngModel)]="colorSelected"
+             (change)="onChangeColor(color)"
+             class="radio-button"
+             type="radio"
+             value="{{ color }}"
+             name="colors">
+      <span [ngClass]="color"
+            class="square-color"></span>
+    </label>
+  </div>
+</div>
